@@ -6,7 +6,7 @@ export default function FreeCVGenerator() {
           Free AI CV Generator
         </div>
 
-        <h2 className="text-5xl font-black">
+        <h2 className="text-4xl sm:text-5xl font-black">
           Create Your Professional CV In Minutes
         </h2>
 

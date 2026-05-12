@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="max-w-7xl mx-auto px-8 py-20 grid lg:grid-cols-2 gap-16 items-center">
+    <section className="max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-20 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center overflow-hidden">
       <div>
         <div className="inline-block bg-cyan-400/10 border border-cyan-400/30 text-cyan-300 px-5 py-2 rounded-full mb-6">
           AI-Powered Career Platform

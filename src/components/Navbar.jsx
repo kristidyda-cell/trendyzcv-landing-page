@@ -1,12 +1,12 @@
 export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
-      <div className="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
-        <a href="#" className="text-2xl font-black text-cyan-400">
+      <div className="max-w-7xl mx-auto px-5 md:px-8 py-5 flex items-center justify-between">
+        <a href="#" className="text-xl md:text-2xl font-black text-cyan-400">
           TRENDYZCV.COM
         </a>
 
-        <div className="hidden md:flex gap-8 text-sm text-gray-300">
+        <div className="hidden lg:flex gap-8 text-sm text-gray-300">
           <a href="#" className="hover:text-cyan-400 transition">Home</a>
           <a href="#free-cv" className="hover:text-cyan-400 transition">Free CV Review</a>
           <a href="#pricing" className="hover:text-cyan-400 transition">Pricing</a>
@@ -14,7 +14,7 @@ export default function Navbar() {
           <a href="#linkedin" className="hover:text-cyan-400 transition">LinkedIn</a>
         </div>
 
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden lg:flex items-center gap-3">
           <button className="text-gray-300 hover:text-cyan-400 transition">
             Login
           </button>
@@ -24,9 +24,12 @@ export default function Navbar() {
           </button>
         </div>
 
-        <button className="md:hidden border border-white/20 px-4 py-2 rounded-xl text-sm">
-          Menu
-        </button>
+        <a
+          href="#free-cv"
+          className="lg:hidden bg-cyan-400 text-black px-4 py-2 rounded-xl text-sm font-bold"
+        >
+          Start
+        </a>
       </div>
     </nav>
   );

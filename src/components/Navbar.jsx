@@ -1,9 +1,12 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   const links = [
     { label: "Home", href: "/" },
-    { label: "Free CV", href: "/" },
+    { label: "Free CV", href: "/#free-cv" },
     { label: "Premium CV", href: "/premium-cv" },
     { label: "Pricing", href: "/pricing" },
     { label: "Job Portal", href: "/job-portal" },
@@ -18,15 +21,25 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden lg:flex gap-8 text-sm text-gray-300">
-          {links.map((link) => (
-            <Link
-              key={link.label}
-              to={link.href}
-              className="hover:text-cyan-400 transition-colors duration-300"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {links.map((link) =>
+            link.href.includes("#") ? (
+              <a
+                key={link.label}
+                href={link.href}
+                className="hover:text-cyan-400 transition-colors duration-300"
+              >
+                {link.label}
+              </a>
+            ) : (
+              <Link
+                key={link.label}
+                to={link.href}
+                className="hover:text-cyan-400 transition-colors duration-300"
+              >
+                {link.label}
+              </Link>
+            )
+          )}
         </div>
 
         <div className="hidden lg:flex items-center gap-3">
@@ -42,13 +55,49 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <Link
-          to="/"
+        <button
+          onClick={() => setIsOpen(!isOpen)}
           className="lg:hidden bg-cyan-400 text-black px-4 py-2 rounded-xl text-sm font-bold"
         >
-          Free CV
-        </Link>
+          {isOpen ? "Close" : "Menu"}
+        </button>
       </div>
+
+      {isOpen && (
+        <div className="lg:hidden border-t border-white/10 bg-slate-950 px-5 py-5">
+          <div className="flex flex-col gap-4 text-gray-300">
+            {links.map((link) =>
+              link.href.includes("#") ? (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.label}
+                  to={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="hover:text-cyan-400 transition-colors"
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
+
+            <Link
+              to="/job-portal"
+              onClick={() => setIsOpen(false)}
+              className="bg-cyan-400 text-black px-5 py-3 rounded-xl font-bold text-center"
+            >
+              Post Job Free
+            </Link>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }

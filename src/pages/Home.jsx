@@ -7,7 +7,11 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <FreeCVGenerator />
+
+      <div id="free-cv" className="scroll-mt-28">
+        <FreeCVGenerator />
+      </div>
+
       <ATSChecker />
       <FinalCTA />
     </main>

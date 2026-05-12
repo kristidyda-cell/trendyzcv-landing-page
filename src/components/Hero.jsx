@@ -6,7 +6,7 @@ export default function Hero() {
           AI-Powered Career Platform
         </div>
 
-        <h2 className="text-5xl lg:text-6xl font-black leading-tight">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight">
           Build ATS-Optimized CVs &{" "}
           <span className="text-cyan-400">Get Hired Faster</span>
         </h2>

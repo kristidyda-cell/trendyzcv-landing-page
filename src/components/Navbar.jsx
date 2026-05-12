@@ -7,8 +7,9 @@ export default function Navbar() {
   const links = [
     { label: "Home", href: "/" },
     { label: "Free CV", href: "/#free-cv" },
-    { label: "Premium CV", href: "/premium-cv" },
+    { label: "CV Designs", href: "/premium-cv" },
     { label: "Pricing", href: "/pricing" },
+    { label: "Reviews", href: "/reviews" },
     { label: "Job Portal", href: "/job-portal" },
     { label: "LinkedIn", href: "/linkedin-optimization" },
   ];
@@ -16,11 +17,15 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-[9999] border-b border-white/10 bg-slate-950/95 backdrop-blur-xl">
       <div className="max-w-7xl mx-auto px-5 md:px-8 py-5 flex items-center justify-between">
-        <Link to="/" className="text-xl md:text-2xl font-black text-cyan-400">
+        <Link
+          to="/"
+          onClick={() => setIsOpen(false)}
+          className="text-xl md:text-2xl font-black text-cyan-400 tracking-wide"
+        >
           TRENDYZCV.COM
         </Link>
 
-        <div className="hidden lg:flex gap-8 text-sm text-gray-300">
+        <div className="hidden xl:flex gap-7 text-sm text-gray-300">
           {links.map((link) =>
             link.href.includes("#") ? (
               <a
@@ -42,7 +47,7 @@ export default function Navbar() {
           )}
         </div>
 
-        <div className="hidden lg:flex items-center gap-3">
+        <div className="hidden xl:flex items-center gap-3">
           <button className="text-gray-300 hover:text-cyan-400 transition-colors duration-300">
             Login
           </button>
@@ -57,14 +62,14 @@ export default function Navbar() {
 
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden bg-cyan-400 text-black px-4 py-2 rounded-xl text-sm font-bold"
+          className="xl:hidden bg-cyan-400 text-black px-4 py-2 rounded-xl text-sm font-bold"
         >
           {isOpen ? "Close" : "Menu"}
         </button>
       </div>
 
       {isOpen && (
-        <div className="lg:hidden border-t border-white/10 bg-slate-950 px-5 py-5">
+        <div className="xl:hidden border-t border-white/10 bg-slate-950 px-5 py-5">
           <div className="flex flex-col gap-4 text-gray-300">
             {links.map((link) =>
               link.href.includes("#") ? (

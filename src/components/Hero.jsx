@@ -17,12 +17,12 @@ export default function Hero() {
           employment platform.
         </p>
 
-        <div className="flex flex-wrap gap-4 mt-10">
-          <button className="bg-cyan-400 text-black font-bold px-8 py-4 rounded-xl hover:bg-cyan-300">
+        <div className="flex flex-col sm:flex-row gap-4 mt-10">
+          <button className="w-full sm:w-auto bg-cyan-400 text-black font-bold px-8 py-4 rounded-xl hover:bg-cyan-300">
             Generate Free CV
           </button>
 
-          <button className="border border-white/20 px-8 py-4 rounded-xl hover:border-cyan-400">
+          <button className="w-full sm:w-auto border border-white/20 px-8 py-4 rounded-xl hover:border-cyan-400">
             Upload Existing CV
           </button>
         </div>
@@ -40,7 +40,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
+      <div className="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-8">
         <div className="flex items-center justify-between mb-8">
           <h3 className="text-2xl font-bold">ATS Score Preview</h3>
           <span className="bg-green-500/20 text-green-400 px-4 py-2 rounded-full text-sm">
@@ -68,6 +68,7 @@ export default function Hero() {
                 <span>{label}</span>
                 <span>{value}</span>
               </div>
+
               <div className="h-3 bg-white/10 rounded-full">
                 <div className={`h-3 ${width} ${color} rounded-full`}></div>
               </div>

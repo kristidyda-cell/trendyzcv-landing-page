@@ -1,8 +1,8 @@
 export default function Services() {
   return (
-    <section id="linkedin" className="max-w-7xl mx-auto px-8 py-20">
+    <section id="linkedin" className="max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-20 overflow-hidden">
       <div className="text-center mb-16">
-        <h2 className="text-5xl font-black">
+        <h2 className="text-4xl sm:text-5xl font-black">
           Professional CV Writing & LinkedIn Optimization
         </h2>
 
@@ -14,7 +14,7 @@ export default function Services() {
       </div>
 
       <div className="grid lg:grid-cols-2 gap-8">
-        <div className="bg-white/5 border border-white/10 rounded-3xl p-10 hover:border-cyan-400 transition">
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-10 hover:border-cyan-400 transition">
           <div className="inline-block bg-cyan-400/10 text-cyan-300 px-5 py-2 rounded-full mb-6">
             Manual Service
           </div>
@@ -37,7 +37,7 @@ export default function Services() {
               "Manual preparation by the TRENDYZCV team",
             ].map((item, index) => (
               <div key={index} className="flex gap-4">
-                <span className="w-7 h-7 bg-cyan-400 text-black rounded-full flex items-center justify-center font-bold">
+                <span className="w-7 h-7 bg-cyan-400 text-black rounded-full flex items-center justify-center font-bold shrink-0">
                   ✓
                 </span>
                 <span className="text-gray-300">{item}</span>
@@ -50,7 +50,7 @@ export default function Services() {
           </button>
         </div>
 
-        <div className="bg-white/5 border border-white/10 rounded-3xl p-10 hover:border-cyan-400 transition">
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-10 hover:border-cyan-400 transition">
           <div className="inline-block bg-blue-500/10 text-blue-300 px-5 py-2 rounded-full mb-6">
             LinkedIn Profile
           </div>
@@ -73,7 +73,7 @@ export default function Services() {
               "Networking and outreach strategy guidance",
             ].map((item, index) => (
               <div key={index} className="flex gap-4">
-                <span className="w-7 h-7 bg-blue-400 text-black rounded-full flex items-center justify-center font-bold">
+                <span className="w-7 h-7 bg-blue-400 text-black rounded-full flex items-center justify-center font-bold shrink-0">
                   ✓
                 </span>
                 <span className="text-gray-300">{item}</span>

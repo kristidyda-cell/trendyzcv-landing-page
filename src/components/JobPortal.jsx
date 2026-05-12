@@ -21,14 +21,14 @@ export default function JobPortal() {
   ];
 
   return (
-    <section id="job-portal" className="max-w-7xl mx-auto px-8 py-20">
+    <section id="job-portal" className="max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-20 overflow-hidden">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <div className="inline-block bg-cyan-400/10 border border-cyan-400/30 text-cyan-300 px-5 py-2 rounded-full mb-6">
             Job Portal
           </div>
 
-          <h2 className="text-5xl font-black leading-tight">
+          <h2 className="text-4xl sm:text-5xl font-black leading-tight break-words">
             Search Jobs, Apply Faster & Let Employers Find You
           </h2>
 
@@ -56,12 +56,13 @@ export default function JobPortal() {
         </div>
 
         <div className="bg-white text-black rounded-3xl p-6">
-          <div className="flex gap-3 mb-6">
+          <div className="flex flex-col sm:flex-row gap-3 mb-6">
             <input
               className="flex-1 border border-gray-200 rounded-xl px-4 py-3"
               placeholder="Search job title"
             />
-            <button className="bg-black text-white px-6 rounded-xl font-bold">
+
+            <button className="bg-black text-white px-6 py-3 rounded-xl font-bold">
               Search
             </button>
           </div>
@@ -71,12 +72,12 @@ export default function JobPortal() {
               key={index}
               className="border border-gray-200 rounded-2xl p-5 mb-4 hover:border-cyan-400 transition"
             >
-              <div className="flex items-start justify-between gap-4">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
                 <div>
                   <h3 className="text-xl font-black">{job.title}</h3>
                   <p className="text-gray-600 mt-1">{job.company}</p>
 
-                  <div className="flex gap-3 mt-4 text-sm">
+                  <div className="flex flex-wrap gap-3 mt-4 text-sm">
                     <span className="bg-gray-100 px-3 py-1 rounded-full">
                       {job.location}
                     </span>
@@ -86,7 +87,7 @@ export default function JobPortal() {
                   </div>
                 </div>
 
-                <button className="bg-cyan-400 text-black px-5 py-3 rounded-xl font-bold">
+                <button className="w-full sm:w-auto bg-cyan-400 text-black px-5 py-3 rounded-xl font-bold">
                   Apply
                 </button>
               </div>

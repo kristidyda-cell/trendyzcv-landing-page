@@ -30,9 +30,9 @@ export default function Pricing() {
   ];
 
   return (
-    <section id="pricing" className="max-w-7xl mx-auto px-8 py-20">
+    <section id="pricing" className="max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-20 overflow-hidden">
       <div className="text-center mb-16">
-        <h2 className="text-5xl font-black">Pricing Plans</h2>
+        <h2 className="text-4xl sm:text-5xl font-black">Pricing Plans</h2>
 
         <p className="text-gray-400 mt-5">
           Free trial, monthly and 3-month subscription options.
@@ -43,9 +43,9 @@ export default function Pricing() {
         {plans.map((plan, index) => (
           <div
             key={index}
-            className={`rounded-3xl p-10 ${
+            className={`rounded-3xl p-8 md:p-10 ${
               index === 1
-                ? "bg-cyan-400 text-black scale-105"
+                ? "bg-cyan-400 text-black lg:scale-105"
                 : "bg-white text-black"
             }`}
           >

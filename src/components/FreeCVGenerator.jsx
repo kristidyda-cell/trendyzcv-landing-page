@@ -1,6 +1,6 @@
 export default function FreeCVGenerator() {
   return (
-    <section id="free-cv" className="max-w-7xl mx-auto px-8 py-20">
+    <section id="free-cv" className="max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-20 overflow-hidden">
       <div className="text-center mb-16">
         <div className="inline-block bg-cyan-400/10 border border-cyan-400/30 text-cyan-300 px-5 py-2 rounded-full mb-6">
           Free AI CV Generator
@@ -17,22 +17,16 @@ export default function FreeCVGenerator() {
         </p>
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-10 items-stretch">
-        <div className="bg-white text-black rounded-3xl p-8 h-full flex flex-col">
+      <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-stretch">
+        <div className="bg-white text-black rounded-3xl p-6 md:p-8 h-full flex flex-col">
           <h3 className="text-3xl font-black mb-6">
             Start Building Your CV
           </h3>
 
           <div className="space-y-5 flex-1 flex flex-col">
-            <input
-              className="w-full border border-gray-200 rounded-xl px-5 py-4"
-              placeholder="Full Name"
-            />
+            <input className="w-full border border-gray-200 rounded-xl px-5 py-4" placeholder="Full Name" />
 
-            <input
-              className="w-full border border-gray-200 rounded-xl px-5 py-4"
-              placeholder="Target Job Title"
-            />
+            <input className="w-full border border-gray-200 rounded-xl px-5 py-4" placeholder="Target Job Title" />
 
             <select className="w-full border border-gray-200 rounded-xl px-5 py-4">
               <option>Select Industry</option>
@@ -54,10 +48,10 @@ export default function FreeCVGenerator() {
           </div>
         </div>
 
-        <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
-          <div className="flex items-center justify-between mb-6">
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-8">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
             <h3 className="text-3xl font-black">Generated CV Preview</h3>
-            <span className="bg-cyan-400 text-black px-4 py-2 rounded-full text-sm font-bold">
+            <span className="bg-cyan-400 text-black px-4 py-2 rounded-full text-sm font-bold w-fit">
               ATS Ready
             </span>
           </div>
@@ -80,16 +74,11 @@ export default function FreeCVGenerator() {
               <div>
                 <h5 className="font-black text-cyan-600">Core Skills</h5>
                 <div className="flex flex-wrap gap-2 mt-3">
-                  {["React", "JavaScript", "UI/UX", "API Integration", "Tailwind"].map(
-                    (skill, index) => (
-                      <span
-                        key={index}
-                        className="bg-gray-100 px-3 py-1 rounded-full text-sm"
-                      >
-                        {skill}
-                      </span>
-                    )
-                  )}
+                  {["React", "JavaScript", "UI/UX", "API Integration", "Tailwind"].map((skill, index) => (
+                    <span key={index} className="bg-gray-100 px-3 py-1 rounded-full text-sm">
+                      {skill}
+                    </span>
+                  ))}
                 </div>
               </div>
 

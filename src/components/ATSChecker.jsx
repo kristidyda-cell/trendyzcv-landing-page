@@ -1,19 +1,19 @@
 export default function ATSChecker() {
   return (
-    <section className="max-w-7xl mx-auto px-8 py-20">
+    <section className="max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-20 overflow-hidden">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
-        <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
-          <div className="flex items-center justify-between mb-8">
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-8">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
             <h3 className="text-3xl font-black">Instant ATS Score Checker</h3>
-            <span className="bg-green-500/20 text-green-400 px-4 py-2 rounded-full text-sm">
+            <span className="bg-green-500/20 text-green-400 px-4 py-2 rounded-full text-sm w-fit">
               Excellent Match
             </span>
           </div>
 
           <div className="flex justify-center my-10">
-            <div className="w-56 h-56 rounded-full border-[16px] border-cyan-400 flex items-center justify-center">
+            <div className="w-48 h-48 md:w-56 md:h-56 rounded-full border-[16px] border-cyan-400 flex items-center justify-center">
               <div className="text-center">
-                <h2 className="text-6xl font-black">92%</h2>
+                <h2 className="text-5xl md:text-6xl font-black">92%</h2>
                 <p className="text-gray-400 mt-2">ATS Score</p>
               </div>
             </div>
@@ -44,7 +44,7 @@ export default function ATSChecker() {
             ATS Compatibility Analysis
           </div>
 
-          <h2 className="text-5xl font-black leading-tight">
+          <h2 className="text-4xl sm:text-5xl font-black leading-tight">
             Upload Your CV and Get Instant Improvement Suggestions
           </h2>
 
@@ -62,7 +62,7 @@ export default function ATSChecker() {
               "PDF download and job portal upload ready",
             ].map((item, index) => (
               <div key={index} className="flex items-center gap-4">
-                <span className="w-7 h-7 bg-cyan-400 text-black rounded-full flex items-center justify-center font-bold">
+                <span className="w-7 h-7 bg-cyan-400 text-black rounded-full flex items-center justify-center font-bold shrink-0">
                   ✓
                 </span>
                 <span className="text-gray-300">{item}</span>

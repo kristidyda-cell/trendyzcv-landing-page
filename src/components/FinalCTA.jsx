@@ -1,8 +1,8 @@
 export default function FinalCTA() {
   return (
-    <section className="max-w-7xl mx-auto px-8 py-24">
-      <div className="bg-gradient-to-r from-cyan-400 to-blue-500 text-black rounded-[40px] p-12 text-center">
-        <h2 className="text-5xl font-black">
+    <section className="max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-24 overflow-hidden">
+      <div className="bg-gradient-to-r from-cyan-400 to-blue-500 text-black rounded-[32px] md:rounded-[40px] p-8 md:p-12 text-center">
+        <h2 className="text-4xl sm:text-5xl font-black">
           Ready To Build Your Career Success Platform?
         </h2>
 
@@ -12,7 +12,7 @@ export default function FinalCTA() {
           in one modern platform.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-4 mt-10">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10">
           <button className="bg-black text-white px-8 py-4 rounded-xl font-bold">
             Generate Free CV
           </button>

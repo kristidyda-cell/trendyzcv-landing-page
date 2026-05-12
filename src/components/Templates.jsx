@@ -13,9 +13,9 @@ export default function Templates() {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto px-8 py-20">
+    <section className="max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-20 overflow-hidden">
       <div className="text-center mb-16">
-        <h2 className="text-5xl font-black">Choose Your CV Template</h2>
+        <h2 className="text-4xl sm:text-5xl font-black">Choose Your CV Template</h2>
 
         <p className="text-gray-400 mt-5 text-lg">
           Select from modern ATS-safe CV designs. Free and premium templates are available.

@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/90 backdrop-blur-xl">
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-slate-950/95 backdrop-blur-xl">
       <div className="max-w-7xl mx-auto px-5 md:px-8 py-5 flex items-center justify-between">
         <a href="#" className="text-xl md:text-2xl font-black text-cyan-400">
           TRENDYZCV.COM

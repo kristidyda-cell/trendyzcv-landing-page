@@ -1,16 +1,32 @@
-# React + Vite
+# TRENDYZCV Landing Page Concept
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Milestone 1 frontend UI/UX concept for TRENDYZCV.COM.
 
-Currently, two official plugins are available:
+## Live Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://trendyzcv-preview.netlify.app
 
-## React Compiler
+## Included Sections
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Hero landing section
+- Free AI CV Generator preview
+- ATS Score Checker preview
+- Professional CV Writing service section
+- LinkedIn Optimization service section
+- Premium CV Template selection
+- Job Portal preview
+- Pricing plans
+- Final call-to-action section
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- Tailwind CSS
+- Netlify deployment
+
+## Project Status
+
+This is the Milestone 1 frontend UI/UX concept only.
+
+Functional modules such as real AI CV generation, ATS score calculation, authentication, payment gateway, job portal database, dashboards, and admin panel will be handled in later milestones.

@@ -37,6 +37,10 @@ export default function Home() {
               </a>
             </div>
 
+            <p className="text-cyan-300 mt-6 font-semibold leading-7">
+            Only 2% of resumes make it past the first round. Be in the top 2%.
+            </p>
+            
             <div className="grid grid-cols-3 gap-4 mt-12 max-w-xl">
               <div className="bg-white/5 border border-white/10 rounded-2xl p-4">
                 <h3 className="text-3xl font-black text-cyan-400">98%</h3>

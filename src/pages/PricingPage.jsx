@@ -48,7 +48,7 @@ export default function PricingPage() {
           {packages.map((item, index) => (
             <div
               key={item.title}
-              className={`rounded-3xl p-8 ${
+              className={`rounded-3xl p-6 md:p-8 ${
                 index === 1
                   ? "bg-cyan-400 text-black"
                   : "bg-white text-black"
@@ -56,9 +56,9 @@ export default function PricingPage() {
             >
               <p className="text-sm font-bold opacity-70">{item.subtitle}</p>
 
-              <h2 className="text-3xl font-black mt-3">{item.title}</h2>
+              <h2 className="text-2xl md:text-3xl font-black mt-3">{item.title}</h2>
 
-              <h3 className="text-5xl font-black mt-6">{item.price}</h3>
+              <h3 className="text-4xl md:text-5xl font-black mt-6">{item.price}</h3>
 
               <p className="text-sm mt-2 opacity-70">2-day turnaround</p>
 

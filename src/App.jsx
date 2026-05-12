@@ -14,15 +14,36 @@ export default function App() {
   return (
     <div className="min-h-screen bg-slate-950 text-white overflow-x-hidden pt-20">
       <Navbar />
-      <Hero />
-      <FreeCVGenerator />
-      <ATSChecker />
-      <Features />
-      <Services />
-      <Templates />
-      <JobPortal />
-      <Pricing />
-      <FinalCTA />
+
+      <main>
+        <div id="home" className="scroll-mt-24">
+          <Hero />
+        </div>
+
+        <div id="free-cv" className="scroll-mt-24">
+          <FreeCVGenerator />
+        </div>
+
+        <ATSChecker />
+        <Features />
+
+        <div id="linkedin" className="scroll-mt-24">
+          <Services />
+        </div>
+
+        <Templates />
+
+        <div id="job-portal" className="scroll-mt-24">
+          <JobPortal />
+        </div>
+
+        <div id="pricing" className="scroll-mt-24">
+          <Pricing />
+        </div>
+
+        <FinalCTA />
+      </main>
+
       <Footer />
     </div>
   );

@@ -30,7 +30,7 @@ export default function Pricing() {
   ];
 
   return (
-    <section id="pricing" className="max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-20 overflow-hidden">
+    <section className="max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-20 overflow-hidden">
       <div className="text-center mb-16">
         <h2 className="text-4xl sm:text-5xl font-black">Pricing Plans</h2>
 

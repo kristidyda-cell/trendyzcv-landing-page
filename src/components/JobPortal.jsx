@@ -22,7 +22,6 @@ export default function JobPortal() {
 
   return (
     <section
-      id="job-portal"
       className="max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-20 overflow-hidden"
     >
       <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">

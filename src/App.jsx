@@ -1,50 +1,30 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import FreeCVGenerator from "./components/FreeCVGenerator";
-import ATSChecker from "./components/ATSChecker";
-import Features from "./components/Features";
-import Services from "./components/Services";
-import Templates from "./components/Templates";
-import JobPortal from "./components/JobPortal";
-import Pricing from "./components/Pricing";
-import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
+
+import Home from "./pages/Home";
+import PremiumCV from "./pages/PremiumCV";
+import PricingPage from "./pages/PricingPage";
+import LinkedInPage from "./pages/LinkedInPage";
+import JobPortalPage from "./pages/JobPortalPage";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white overflow-x-hidden pt-20">
-      <Navbar />
+    <BrowserRouter>
+      <div className="min-h-screen bg-slate-950 text-white overflow-x-hidden pt-20">
+        <Navbar />
 
-      <main>
-        <div id="home" className="scroll-mt-24">
-          <Hero />
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/premium-cv" element={<PremiumCV />} />
+          <Route path="/pricing" element={<PricingPage />} />
+          <Route path="/linkedin-optimization" element={<LinkedInPage />} />
+          <Route path="/job-portal" element={<JobPortalPage />} />
+        </Routes>
 
-        <div id="free-cv" className="scroll-mt-24">
-          <FreeCVGenerator />
-        </div>
-
-        <ATSChecker />
-        <Features />
-
-        <div id="linkedin" className="scroll-mt-24">
-          <Services />
-        </div>
-
-        <Templates />
-
-        <div id="job-portal" className="scroll-mt-24">
-          <JobPortal />
-        </div>
-
-        <div id="pricing" className="scroll-mt-24">
-          <Pricing />
-        </div>
-
-        <FinalCTA />
-      </main>
-
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }

@@ -1,6 +1,6 @@
 export default function FreeCVGenerator() {
   return (
-    <section id="free-cv" className="max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-20 overflow-hidden">
+    <section className="max-w-7xl mx-auto px-5 md:px-8 py-16 md:py-20 overflow-hidden">
       <div className="text-center mb-16">
         <div className="inline-block bg-cyan-400/10 border border-cyan-400/30 text-cyan-300 px-5 py-2 rounded-full mb-6">
           Free AI CV Generator
